@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <title>Veg | Fruit</title>
+  </head>
+  <body>
+    <div class="container mt-3">
+      <h1 class="mt-2 mb-3 bg-info text-center">
+        Identify Listed vegitable and Fruits
+      </h1>
+      <div class="container">
+        <div class="row">
+          <div class="col-4">
+            <ul class="list-group">
+              <li class="list-group-item list-group-item-primary">Apple</li>
+              <li class="list-group-item list-group-item-primary">
+                Bitter_Melon
+              </li>
+              <li class="list-group-item list-group-item-primary">
+                Brinjal_Dotted
+              </li>
+              <li class="list-group-item list-group-item-primary">Chilli</li>
+              <li class="list-group-item list-group-item-primary">Fig</li>
+              <li class="list-group-item list-group-item-primary">
+                Green_Orange
+              </li>
+              <li class="list-group-item list-group-item-primary">Khira</li>
+            </ul>
+          </div>
+          <div class="col-4">
+            <ul>
+              <li class="list-group-item list-group-item-primary">Kiwi</li>
+              <li class="list-group-item list-group-item-primary">Onion</li>
+              <li class="list-group-item list-group-item-primary">Papper</li>
+              <li class="list-group-item list-group-item-primary">
+                Pomogranate
+              </li>
+              <li class="list-group-item list-group-item-primary">
+                Red_Cabbage
+              </li>
+              <li class="list-group-item list-group-item-primary">SMG</li>
+            </ul>
+          </div>
+          <div class="col-4">
+            <ul>
+              <li class="list-group-item list-group-item-primary">Sapodilla</li>
+              <li class="list-group-item list-group-item-primary">
+                Spoung_Gourd
+              </li>
+              <li class="list-group-item list-group-item-primary">Straberry</li>
+              <li class="list-group-item list-group-item-primary">
+                Tomato_Green
+              </li>
+              <li class="list-group-item list-group-item-primary">
+                Tomato_Red
+              </li>
+              <li class="list-group-item list-group-item-primary">
+                Watermellon
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="container mt-5 text-center">
+        <form method="post" action="/result" enctype=multipart/form-data>
+          <div class="mb-3">
+            <label for="exampleInputEmail1" class="form-label"
+              >Upload a Image</label
+            >
+            <input
+              type="file"
+              class="form-control"
+              name="image"
+              aria-describedby="imageHelp"
+              required
+            />
+            <div id="imageHelp" class="form-text">
+              We'll never share your image with anyone else.
+            </div>
+          </div>
+          <button type="submit" value="Upload" class="btn btn-primary">Identify</button>
+        </form>
+      </div>
+    </div>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
